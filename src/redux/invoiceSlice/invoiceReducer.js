@@ -31,7 +31,7 @@ const initialState= {
       ]}]
 }
 
-export const invoiceReducer= (state= initialState, {type, payload}) => {
+export const Reducer= (state= initialState, {type, payload}) => {
     switch(type){
         case 'ADD_INVOICE': state.invoices.push(payload); return state;
         case 'EDIT_INVOICE': state.invoices= state.invoices.map(inv=> inv.invoiceNumber===payload.invoiceNumber ? payload : inv); return state;
