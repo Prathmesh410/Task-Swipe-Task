@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux';
-import { addInvoice, editInvoice } from '../redux/invoiceSlice/action';
+import { addInvoice, editInvoice } from '../redux/action';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
