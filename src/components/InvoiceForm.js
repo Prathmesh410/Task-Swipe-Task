@@ -49,7 +49,7 @@ class InvoiceForm extends React.Component {
     var items = this.state.items;
     var subTotal = 0;
 
-    items.map(function(items) {
+    items.forEach(function(items) {
       subTotal = parseFloat(subTotal + (parseFloat(items.price).toFixed(2) * parseInt(items.quantity))).toFixed(2)
     });
 
@@ -79,7 +79,7 @@ class InvoiceForm extends React.Component {
     var items = this.state.items.slice();
     var newItems = items.map(function(items) {
       for (var key in items) {
-        if (key == item.name && items.id == item.id) {
+        if (key === item.name && items.id === item.id) {
           items[key] = item.value;
         }
       }
@@ -103,7 +103,7 @@ class InvoiceForm extends React.Component {
     this.handleCalculateTotal()
     this.addTo ? this.props.addInvoice(this.state) : this.props.editInvoice(this.state)
     this.setState({isOpen: true})
-    if( this.addTo ) this.state.invoiceNumber = this.state.invoiceNumber + 1
+    if( this.addTo ) this.setStatestate(this.state.invoiceNumber + 1)
   };
 
   closeModal = (event) => this.setState({isOpen: false});

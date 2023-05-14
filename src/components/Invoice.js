@@ -22,6 +22,3 @@ export default function Invoice({ val, view, edit, remove }) {
     )
 } 
 
-{/* <div>Invoice No: {val.invoiceNumber} <span className="right">Date: {val.dateOfIssue} <HiOutlineViewfinderCircle onClick={view} className = 'ml-5'/> </span> </div>
-            <div>From : {val.billFrom} <span className="right">To:  {val.billTo} <FiEdit onClick={edit} /> </span> </div>
-            <div >{val.billFromEmail}<span className="right">{val.billToEmail} <RiDeleteBin7Line onClick={remove} /></span> </div> */}

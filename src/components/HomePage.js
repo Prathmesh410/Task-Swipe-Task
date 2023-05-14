@@ -64,7 +64,7 @@ export default function HomePage() {
             <Row >
                 <Col className="col d-flex justify-content-center mb-3"><Link to='/create-invoice'><Button className="btn create-btn">Create Invoice</Button></Link></Col>
             </Row> 
-            <div className="row d-flex justify-content-center"> { invoices.length === 1 ? <h4 className="">No Invoices Available</h4> : <InvoicesDetails/>}  </div>
+            <div className="row d-flex justify-content-center"> { invoices?.length === 1 ? <h4 className="">No Invoices Available</h4> : <InvoicesDetails/>}  </div>
             <InvoiceModal showModal={isOpen} closeModal={closeModal} info={state} items={state.items} currency={state.currency} subTotal={state.subTotal} taxAmmount={state.taxAmmount} discountAmmount={state.discountAmmount} total={state.total} />
         </div>
     )
