@@ -17,4 +17,4 @@ npm start / npm run build
 
 ```
 
-For any other information react out to : praveennegiuk07@gmail.com
+#Note: If you have trouble putting value in item then delete the once then add.
