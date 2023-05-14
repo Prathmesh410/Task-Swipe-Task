@@ -6,6 +6,8 @@ The project is an Invoice generator built with React and Redux. It is a feature-
 ### Live Demo
 [https://swipe-invoice-generator.netlify.app/](https://task-swipe.vercel.app/)
 
+
+
 ### Installation
 
 ```
@@ -17,4 +19,5 @@ npm start / npm run build
 
 ```
 
-#Note: If you have trouble putting value in item then delete the once then add.
+
+####Note: If you have trouble putting value in item then delete the once then add.
