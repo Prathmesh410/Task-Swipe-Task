@@ -3,7 +3,7 @@ body, html {
   background: #f2f3f7
 }
 body, .form-control {
-  font-size: 0.9rem
+  font-size: 1rem
 }
 body,
 html,
@@ -13,38 +13,59 @@ html,
 }
 .btn {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
+  background-color: #212A3E;
+  border-color: #212A3E;
+  transition: transform 0.3s;
   padding: 0.66rem;
+  color: #F1F6F9;
+  letter-spacing: 0.1rem;
   border-radius: 0.5rem;
   box-shadow: 0 .1rem .1rem rgba(0,0,0,.05)!important
 }
+.btn:hover{
+  background-color: #1b2437;
+  transform: scale(1.05);
+  border-color:#ffffff;
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .App{
-  background: url('https://images.ctfassets.net/ifu905unnj2g/4EPQDIZAwMKSAAKeEao84E/4b26cf630da967ea0d86c7581e53767c/Pie_Chart_and_Calculator_Green_Background-min.png');
+  background: -webkit-linear-gradient(top, #F1F6F9, #CED4E1);
+  background: -moz-linear-gradient(top, #F1F6F9, #CED4E1);
+  background: -o-linear-gradient(top, #F1F6F9, #CED4E1);
+  background: linear-gradient(to bottom, #F1F6F9, #CED4E1);
 }
 .invoiceGenerator{
-  text-align: right;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #394a57;
+  text-align: center;
+  letter-spacing: 1px;
+  color:#212A3E;
 }
 
 .btn-light {
   border-color: #dedede
 }
+
+
 .right{
+  font-size: large;
   position: absolute;
   right: 0px;
+  font-family: sans-serif;
 }
 
 .invoice{ 
-  background-color: #e3e6e9;
+  font-size: large;
+  background-color: #212A3E;
   padding: 8px;
   margin-top: 14px;
   border-radius: 10px;
+  color: #F1F6F9
 }
+
 
 .image{
   height: 15px;

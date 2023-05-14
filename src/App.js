@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store'
 import Container from 'react-bootstrap/Container';
 import InvoiceForm from './components/InvoiceForm';
-import All_Invoices from './components/All_Invoices';
+import HomePage from './components/HomePage';
 import { Route, Routes } from 'react-router-dom';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
       <Provider store={store}>
       <Container>
         <Routes>
-          <Route path='/' element={<All_Invoices/>}/>
+          <Route path='/' element={<HomePage/>}/>
           <Route path='/create-invoice' element={<InvoiceForm />} />
           <Route path='/edit-invoice/:id' element={<InvoiceForm />} />
         </Routes>
