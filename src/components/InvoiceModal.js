@@ -33,7 +33,7 @@ class InvoiceModal extends React.Component {
   render() {
     return(
       <div> 
-        <Modal show={this.props.showModal} onHide={this.props.closeModal} size="lg" centered>
+        <Modal show={this.props.showModal} onHide={this.props.closeModal} size="lg" centered >
           <div id="invoiceCapture">
             <div className="d-flex flex-row justify-content-between align-items-start bg-light w-100 p-4">
               <div className="w-100">

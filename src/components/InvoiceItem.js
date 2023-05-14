@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import { BiTrash } from "react-icons/bi";
+import {RiDeleteBin7Line} from "react-icons/ri"
 import EditableField from './EditableField';
 
 class InvoiceItem extends React.Component {
@@ -30,7 +30,7 @@ class InvoiceItem extends React.Component {
             {itemTable}
           </tbody>
         </Table>
-        <Button className="fw-bold" onClick={this.props.onRowAdd}>Add Item</Button>
+        <Button className="fw-bold " onClick={this.props.onRowAdd}>Add Item</Button>
       </div>
     );
 
@@ -92,7 +92,7 @@ class ItemRow extends React.Component {
           }}/>
         </td>
         <td className="text-center" style={{minWidth: '50px'}}>
-          <BiTrash onClick={this.onDelEvent.bind(this)} style={{height: '33px', width: '33px', padding: '7.5px'}} className="text-white mt-1 btn btn-danger"/>
+          <RiDeleteBin7Line onClick={this.onDelEvent.bind(this)} style={{height: '33px', width: '33px', padding: '7.5px'}} className="text-white mt-1 btn item-delete"/>
         </td>
       </tr>
     );

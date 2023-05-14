@@ -111,7 +111,7 @@ class InvoiceForm extends React.Component {
     return (<Form onSubmit={this.openModal}>
       <Row>
         <Col md={8} lg={9}>
-          <Card className="p-4 p-xl-5 my-3 my-xl-4">
+          <Card className="p-4 p-xl-5 my-3 my-xl-4 ">
             <div className="d-flex flex-row align-items-start justify-content-between mb-3">
               <div class="d-flex flex-column">
                 <div className="d-flex flex-column">
@@ -191,11 +191,11 @@ class InvoiceForm extends React.Component {
         </Col>
         <Col md={4} lg={3}>
           <div className="sticky-top pt-md-3 pt-xl-4">
-          <Link to='/'><Button variant="primary" type="submit" className="d-block w-100">All Invoices</Button></Link>
+          <Link to='/'><Button type="submit" className="d-block w-100 text-decoration-none" >All Invoices</Button></Link>
             <InvoiceModal showModal={this.state.isOpen} closeModal={this.closeModal} info={this.state} items={this.state.items} currency={this.state.currency} subTotal={this.state.subTotal} taxAmmount={this.state.taxAmmount} discountAmmount={this.state.discountAmmount} total={this.state.total}/>
             <Form.Group className="mb-3">
               <Form.Label className="fw-bold">Currency:</Form.Label>
-              <Form.Select onChange={event => this.onCurrencyChange({currency: event.target.value})} className="btn btn-light my-1" aria-label="Change Currency">
+              <Form.Select onChange={event => this.onCurrencyChange({currency: event.target.value})} className="btn text-light my-1" aria-label="Change Currency">
                 <option value="$">USD (United States Dollar)</option>
                 <option value="£">GBP (British Pound Sterling)</option>
                 <option value="¥">JPY (Japanese Yen)</option>
@@ -224,7 +224,7 @@ class InvoiceForm extends React.Component {
                 </InputGroup.Text>
               </InputGroup>
             </Form.Group>
-          <Button variant="primary" type="submit" className="d-block w-100">Save Invoice</Button>
+          <Button variant="primary" type="submit" className="d-block w-100 ">Save Invoice</Button>
           </div>
         </Col>
       </Row>

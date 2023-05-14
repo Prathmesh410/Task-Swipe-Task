@@ -1,9 +1,27 @@
+import {HiOutlineViewfinderCircle} from "react-icons/hi2"
+import {FiEdit} from "react-icons/fi"
+import {RiDeleteBin7Line} from "react-icons/ri"
+
 export default function Invoice({ val, view, edit, remove }) {
     return (
-        <div className="invoice" >
-            <div>Invoice No: {val.invoiceNumber} <span className="right">Date: {val.dateOfIssue} <img className="image" onClick={view} src="https://www.svgrepo.com/show/458981/view.svg" /></span> </div>
-            <div>From : {val.billFrom} <span className="right">To:  {val.billTo} <img className="image" onClick={edit} src="https://www.svgrepo.com/show/513824/edit.svg" /> </span> </div>
-            <div >{val.billFromEmail}<span className="right">{val.billToEmail} <img className="image" onClick={remove} src="https://www.svgrepo.com/show/511788/delete-1487.svg" /></span> </div>
+        <div className="invoice shadow-lg d-flex" >
+           <div className="col invoice-text">
+           <div className="row ">
+                <div className="col d-flex ">Invoice No: {val.invoiceNumber}</div>
+                <div  className="col d-flex ">Date: {val.dateOfIssue}</div>
+            </div>
+            <div>From : {val.billFrom}</div>
+            <div>To:  {val.billTo} </div>
+           </div>
+            <div className="row d-flex invoice-btn-container">
+            <HiOutlineViewfinderCircle onClick={view} className = "invoice-btn fs-4" />
+            <FiEdit onClick={edit}  className = "invoice-btn fs-5"/>
+            <RiDeleteBin7Line onClick={remove}  className = "invoice-btn fs-4"/>
+            </div>
         </div>
     )
 } 
+
+{/* <div>Invoice No: {val.invoiceNumber} <span className="right">Date: {val.dateOfIssue} <HiOutlineViewfinderCircle onClick={view} className = 'ml-5'/> </span> </div>
+            <div>From : {val.billFrom} <span className="right">To:  {val.billTo} <FiEdit onClick={edit} /> </span> </div>
+            <div >{val.billFromEmail}<span className="right">{val.billToEmail} <RiDeleteBin7Line onClick={remove} /></span> </div> */}
