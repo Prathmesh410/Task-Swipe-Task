@@ -103,7 +103,7 @@ class InvoiceForm extends React.Component {
     this.handleCalculateTotal()
     this.addTo ? this.props.addInvoice(this.state) : this.props.editInvoice(this.state)
     this.setState({isOpen: true})
-    if( this.addTo ) this.setStatestate(this.state.invoiceNumber + 1)
+    if( this.addTo ) this.setState({invoice:this.state.invoiceNumber + 1})
   };
 
   closeModal = (event) => this.setState({isOpen: false});
