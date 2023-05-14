@@ -1,10 +1,10 @@
 # Invoice Generator - React Redux App
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-An Invoice generator project built with React. Redux application with features like, creating, saving, deleting & editing invoices. After creating the invoices it provides the facility to download them in pdf format.
+The project is an Invoice generator built with React and Redux. It is a feature-rich application that allows users to create, save, delete, and edit invoices. Additionally, it provides the convenient functionality to download the invoices in PDF format.
 
 ### Live Demo
-https://swipe-invoice-generator.netlify.app/
+[https://swipe-invoice-generator.netlify.app/](https://task-swipe.vercel.app/)
 
 ### Installation
 
